@@ -180,7 +180,6 @@ impl Accumulator for All {
 
 impl From<All> for bool {
     fn from(x: All) -> bool {
-        println!("{:?}", x);
         x.any && x.all
     }
 }
